@@ -5,18 +5,16 @@
   justify-content: start;
 
   color: $primary-font-color;
-  background-color: $sidebar-bg;
+  background-color: $sidebar-bg-color;
   width: 180px;
   height: 100vh;
-  padding: {
-    top: 15px;
-    left: 15px;
-  }
+  padding: 15px;
 }
 
 .user-profile-container {
   @include centered-vertical-flex-container;
-
+  width: 100%;
+  padding: 20px 0 20px 0;
 
   .img-placeholder {
     height: 60px;
@@ -26,7 +24,6 @@
   }
 
   .username {
-    width: 100%;
     position: relative;
     
     &::after {
@@ -35,18 +32,41 @@
       right: -15px;
       bottom: 4px;
       display: inline-block;
-      vertical-align: middle;
     }
   }
 }
 
+.nav-container {
+  align-self: start;
+}
+
 nav {
-  li {
-    list-style: none;
-    
-    a {
-      text-decoration: none;
-      color: $primary-font-color;
+  margin-bottom: 45px;
+
+  h5 {
+    color: $sidebar-header-color;
+    padding-top: 15px;
+    margin-block: {
+      start: 0;
+      end: 0;
+    };
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      @include centered-flex-container;
+      justify-content: start;
+      list-style: none;
+      padding-top: 14px;
+      
+      a {
+        text-decoration: none;
+        color: $primary-font-color;
+        padding-left: 10px;
+      }
     }
   }
+
 }

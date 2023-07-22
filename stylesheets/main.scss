@@ -29,3 +29,10 @@
 
 // Partials
 @import "partials/sidebar";
+
+* {
+  font: {
+    family: $base-font;
+    size: $sm-responsive-base-font;
+  }
+}
