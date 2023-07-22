@@ -4,4 +4,8 @@
 @import '../modules/all';
 @import './typography';
 
-$base-font: 'Nunito', sans-serif;
+$base-font: 'Nunito';
+
+// Dimensions
+$sidebar-padding: 15px;
+$sidebar-width: 180px;

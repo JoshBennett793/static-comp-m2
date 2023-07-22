@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 
 .sidebar {
   @include centered-vertical-flex-container;
@@ -6,9 +6,19 @@
 
   color: $primary-font-color;
   background-color: $sidebar-bg-color;
-  width: 180px;
-  height: 100vh;
-  padding: 15px;
+  height: 100%;
+  width: $sidebar-width;
+  padding: $sidebar-padding;
+
+  hr {
+    position: relative;
+    left: -$sidebar-padding;
+    
+    height: 3px;
+    width: calc($sidebar-width + ($sidebar-padding * 2));
+    background-color: $sidebar-horiz-rule-color;
+    border: none;
+  }
 }
 
 .user-profile-container {
@@ -25,7 +35,7 @@
 
   .username {
     position: relative;
-    
+
     &::after {
       content: '⌄';
       position: absolute;
@@ -49,7 +59,7 @@ nav {
     margin-block: {
       start: 0;
       end: 0;
-    };
+    }
   }
 
   ul {
@@ -59,8 +69,8 @@ nav {
       @include centered-flex-container;
       justify-content: start;
       list-style: none;
-      padding-top: 14px;
-      
+      padding-top: 18px;
+
       a {
         text-decoration: none;
         color: $primary-font-color;
@@ -68,5 +78,19 @@ nav {
       }
     }
   }
+}
 
+.checkbox-container {
+  align-self: start;
+}
+
+input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+}
+
+@each $type in 'admin' 'design' 'executive' 'hr' {
+  label[for=#{$type}-cb] {
+    margin-left: 10px;
+  }
 }
