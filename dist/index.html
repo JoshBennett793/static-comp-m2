@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicant Tracking System</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section class="sidebar">
+      <div class="user-profile-container">
+        <img src="/assets/images/sm-headshot.jpg" alt="user's profile picture" class="profile-pic"></img>
+        <p class="username">Newton Barley</p>
+      </div>
+      <hr>
+      <!-- NAVS -->
+      <div class="nav-container">
+        <nav class="main-nav" aria-labelledby="main-navigation">
+          <h5 id="main-navigation" class="main-nav-header">Main</h5>
+          <ul>
+            <li>
+              <img
+                src="/assets/images/home.svg"
+                alt="home icon"
+                id="home-icon"
+              />
+              <a href="#" aria-current="home" id="menu-link-home">HOME</a>
+            </li>
+            <li>
+              <img
+                src="/assets/images/briefcase.svg"
+                alt="briefcase"
+                id="jobs-icon"
+              />
+              <a href="#" aria-current="jobs" id="menu-link-jobs">JOBS</a>
+            </li>
+            <li>
+              <img
+                src="/assets/images/resumes.svg"
+                alt="resumes icon"
+                id="resumes-icon"
+              />
+              <a href="#" aria-current="resumes" id="menu-link-resumes"
+                >RESUMES</a
+              >
+            </li>
+            <li>
+              <img
+                src="/assets/images/tasks.svg"
+                alt="tasks icon"
+                id="tasks-icon"
+              />
+              <a href="#" aria-current="tasks" id="menu-link-tasks">TASKS</a>
+            </li>
+            <li>
+              <img
+                src="/assets/images/calendar.svg"
+                alt="calendar icon"
+                id="calendar-icon"
+              />
+              <a href="#" aria-current="calendar" id="menu-link-calendar"
+                >CALENDAR</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <hr>
+        <nav class="admin-nav" aria-labelledby="admin-navigation">
+          <h5 id="admin-navigation" class="admin-nav">Admin</h5>
+          <ul>
+            <li>
+              <img
+                src="/assets/images/users.svg"
+                alt="users icon"
+                id="users-icon"
+              />
+              <a href="#" aria-current="users" id="menu-link-users">USERS</a>
+            </li>
+            <li>
+              <img
+                src="/assets/images/location.svg"
+                alt="locations icon"
+                id="locations-icon"
+              />
+              <a href="#" aria-current="locations" id="menu-link-locations"
+                >LOCATIONS</a
+              >
+            </li>
+            <li>
+              <img
+                src="/assets/images/workflows.svg"
+                alt="workflows icon"
+                id="workflows-icon"
+              />
+              <a href="#" aria-current="workflows" id="menu-link-workflows"
+                >WORKFLOWS</a
+              >
+            </li>
+            <li>
+              <img
+                src="/assets/images/job-boards.svg"
+                alt="job boards icon"
+                id="job-boards-icon"
+              />
+              <a href="#" aria-current="job boards" id="menu-link-job-boards"
+                >JOB BOARDS</a
+              >
+            </li>
+            <li>
+              <img
+                src="/assets/images/social.svg"
+                alt="social icon"
+                id="social-icon"
+              />
+              <a href="#" aria-current="social" id="menu-link-social">SOCIAL</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <hr>
+      <!-- SIDEBAR CHECKBOXES -->
+      <div class="checkbox-container">
+        <nav class="category-filter-nav">
+          <h5>Categories</h5>
+          <ul>
+            <li>
+              <input type="checkbox" name="admin-checkbox" id="admin-checkbox" checked/>
+              <label for="admin-checkbox">Administration</label>
+            </li>
+            <li>
+              <input type="checkbox" name="design-checkbox" id="design-checkbox" />
+              <label for="design-checkbox">Design</label>
+            </li>
+            <li>
+              <input type="checkbox" name="executive-checkbox" id="exec-checkbox" />
+              <label for="exec-checkbox">Executive</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hr-checkbox" id="hr-checkbox" />
+              <label for="hr-checkbox">Human Resources</label>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <script src="bundle.js"></script>
+  </body>
+</html>

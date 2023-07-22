@@ -1,0 +1,11 @@
+// Import normalize before all other files
+@import '../../node_modules/normalize.css/normalize';
+
+@import '../modules/all';
+@import './typography';
+
+$base-font: 'Nunito';
+
+// Dimensions
+$sidebar-padding: 15px;
+$sidebar-width: 180px;

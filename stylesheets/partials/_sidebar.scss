@@ -1,0 +1,128 @@
+@import 'base';
+
+.sidebar {
+  @include centered-vertical-flex-container;
+  justify-content: start;
+
+  color: $primary-font-color;
+  background-color: $sidebar-bg-color;
+  height: 100%;
+  width: $sidebar-width;
+  padding: $sidebar-padding;
+
+  hr {
+    position: relative;
+    left: -$sidebar-padding;
+
+    height: 3px;
+    width: calc($sidebar-width + ($sidebar-padding * 2));
+    background-color: $sidebar-horiz-rule-color;
+    border: none;
+  }
+}
+
+.user-profile-container {
+  @include centered-vertical-flex-container;
+  width: 100%;
+  padding: 20px 0 20px 0;
+
+  .profile-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .username {
+    position: relative;
+    font-size: $med-responsive-base-font;
+
+    &::after {
+      content: '⌄';
+      position: absolute;
+      right: -15px;
+      bottom: 4px;
+      display: inline-block;
+    }
+  }
+}
+
+.nav-container {
+  align-self: start;
+}
+
+nav {
+  margin-bottom: 45px;
+
+  h5 {
+    color: $sidebar-header-color;
+    padding-top: 15px;
+    margin-block: {
+      start: 0;
+      end: 0;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      @include centered-flex-container;
+      justify-content: start;
+      list-style: none;
+      padding-top: 18px;
+
+      a {
+        text-decoration: none;
+        color: $primary-font-color;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.checkbox-container {
+  align-self: start;
+}
+
+input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+  appearance: none;
+  padding: 9px;
+  border-radius: 2px;
+  position: relative;
+}
+
+@each $type in 'admin' 'design' 'exec' 'hr' {
+  label[for='#{$type}-checkbox'] {
+    margin-left: 10px;
+  }
+
+  input##{$type}-checkbox {
+
+    &:checked:after {
+      content: '✔';
+      font-size: 14px;
+      position: absolute;
+      top: 1px;
+      left: 4px;
+      color: #000000;
+    }
+  }
+}
+
+#admin-checkbox {
+  background-color: $admin-cb-color;
+}
+
+#design-checkbox {
+  background-color: $design-cb-color;
+}
+
+#exec-checkbox {
+  background-color: $exec-cb-color;
+}
+
+#hr-checkbox {
+  background-color: $hr-cb-color;
+}

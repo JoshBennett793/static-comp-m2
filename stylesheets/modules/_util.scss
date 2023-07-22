@@ -1,0 +1,15 @@
+@mixin centered-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centered-vertical-flex-container {
+  @include centered-flex-container;
+  flex-direction: column;
+}
+
+@mixin sticky-nav {
+  position: sticky;
+  top: 0;
+}
