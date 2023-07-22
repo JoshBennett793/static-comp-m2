@@ -13,7 +13,7 @@
   hr {
     position: relative;
     left: -$sidebar-padding;
-    
+
     height: 3px;
     width: calc($sidebar-width + ($sidebar-padding * 2));
     background-color: $sidebar-horiz-rule-color;
@@ -26,15 +26,15 @@
   width: 100%;
   padding: 20px 0 20px 0;
 
-  .img-placeholder {
-    height: 60px;
-    width: 60px;
-    border: 2px solid red;
+  .profile-pic {
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
   }
 
   .username {
     position: relative;
+    font-size: $med-responsive-base-font;
 
     &::after {
       content: '⌄';
@@ -84,13 +84,45 @@ nav {
   align-self: start;
 }
 
-input[type=checkbox] {
+input[type='checkbox'] {
   height: 20px;
   width: 20px;
+  appearance: none;
+  padding: 9px;
+  border-radius: 2px;
+  position: relative;
 }
 
-@each $type in 'admin' 'design' 'executive' 'hr' {
-  label[for=#{$type}-cb] {
+@each $type in 'admin' 'design' 'exec' 'hr' {
+  label[for='#{$type}-checkbox'] {
     margin-left: 10px;
   }
+
+  input##{$type}-checkbox {
+
+    &:checked:after {
+      content: '✔';
+      font-size: 14px;
+      position: absolute;
+      top: 1px;
+      left: 4px;
+      color: #000000;
+    }
+  }
+}
+
+#admin-checkbox {
+  background-color: $admin-cb-color;
+}
+
+#design-checkbox {
+  background-color: $design-cb-color;
+}
+
+#exec-checkbox {
+  background-color: $exec-cb-color;
+}
+
+#hr-checkbox {
+  background-color: $hr-cb-color;
 }
