@@ -1,0 +1,52 @@
+@import "base";
+
+.sidebar {
+  @include centered-vertical-flex-container;
+  justify-content: start;
+
+  color: $primary-font-color;
+  background-color: $sidebar-bg;
+  width: 180px;
+  height: 100vh;
+  padding: {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.user-profile-container {
+  @include centered-vertical-flex-container;
+
+
+  .img-placeholder {
+    height: 60px;
+    width: 60px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+
+  .username {
+    width: 100%;
+    position: relative;
+    
+    &::after {
+      content: '⌄';
+      position: absolute;
+      right: -15px;
+      bottom: 4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+nav {
+  li {
+    list-style: none;
+    
+    a {
+      text-decoration: none;
+      color: $primary-font-color;
+    }
+  }
+}
