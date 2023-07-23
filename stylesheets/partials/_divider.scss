@@ -1,0 +1,22 @@
+.divider {
+  @include centered-flex-container;
+  width: 100%;
+
+  .divider-line {
+    width: 100%;
+    border: $thin-common-border;
+  }
+
+  button {
+    background-color: #fff;
+    border: $common-border {
+      radius: 50%;
+    };
+    height: 125%;
+    margin: 0 15px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
