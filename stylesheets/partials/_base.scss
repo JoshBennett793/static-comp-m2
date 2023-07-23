@@ -8,7 +8,7 @@
 $sidebar-padding: 15px;
 $sidebar-width: 180px;
 
-$header-divider-border: 2px solid rgb(220, 220, 220);
+$common-border: 2px solid rgb(220, 220, 220);
 
 * {
   box-sizing: border-box;
@@ -24,5 +24,4 @@ main {
 
 a {
   text-decoration: none;
-  color: $primary-font-color;
 }

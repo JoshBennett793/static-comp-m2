@@ -4,7 +4,7 @@
   @include centered-flex-container;
   justify-content: space-between;
   margin: 30px 60px;
-  width: 100%;
+  width: auto;
 
   .listing-position-header {
     color: $secondary-font-color;
@@ -18,7 +18,7 @@
 .listing-location-container {
   @include centered-flex-container;
   justify-content: flex-start;
-  
+
   .listing-location {
     color: $primary-font-color;
   }
@@ -32,4 +32,41 @@
 
 .listing-info-link {
   color: $primary-brand-color;
+}
+
+.listing-button-container {
+  @include centered-flex-container;
+  gap: 20px;
+
+  div {
+    @include centered-flex-container;
+    height: 40px;
+    width: 90px;
+    border: $common-border {
+      radius: 20px;
+    };
+    text-align: center;
+    justify-items: center;
+    
+    span {
+      color: $secondary-font-color;
+    }
+    
+    .green-light {
+      height: 8px;
+      width: 8px;
+      background-color: green;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+  }
+
+  button {
+    height: 40px;
+    background-color: transparent;
+    border: $common-border {
+      radius: 50%;
+    }
+  }
+
 }
