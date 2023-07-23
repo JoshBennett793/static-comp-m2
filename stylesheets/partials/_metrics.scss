@@ -4,14 +4,14 @@
 
 .metrics-section {
   @include centered-flex-container;
-  justify-content: space-around;
-  padding-top: 60px;
+  width: 100%;
+  padding: 60px 120px 60px 0;
 
   .progress-bar-container {
     @include centered-vertical-flex-container;
     height: 250px;
-    width: 50%;
-
+    width: 100%;
+    
     .all-donut-charts-container {
       @include centered-flex-container;
       height: 175px;
