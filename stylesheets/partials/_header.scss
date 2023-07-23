@@ -16,6 +16,10 @@ header {
   img {
     height: 34px;
     width: 34px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
