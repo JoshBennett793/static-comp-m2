@@ -1,0 +1,35 @@
+.lower-main {
+  height: calc(100% - 312px); // this will need to be adjusted
+}
+
+.metrics-section {
+  @include centered-flex-container;
+  height: 300px;
+  border: 2px solid red;
+
+  .progress-bar-container {
+    @include centered-flex-container;
+    height: 160px;
+    width: 160px;
+    gap: 60px;
+  }
+}
+
+.donut-inner {
+  @include centered-vertical-flex-container;
+  margin-right: -180px;
+
+  .stat-value {
+    margin: 0 {
+      top: 15px;
+    };
+    font: {
+      size: $lg-responsive-base-font;
+      weight: 600;
+    }
+  }
+
+  p {
+    color: $secondary-font-color;
+  }
+}
