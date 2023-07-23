@@ -4,18 +4,22 @@ header {
   @include centered-flex-container;
   justify-content: space-between;
   height: 85px;
-  border-bottom: $header-divider-border;
+  border-bottom: $common-border;
 }
 
 .hamburger-menu {
   @include centered-flex-container;
   height: inherit;
   width: 120px;
-  border-right: $header-divider-border;
+  border-right: $common-border;
   
   img {
     height: 34px;
     width: 34px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -32,20 +36,20 @@ header {
 
   button {
     border: none {
-      right: $header-divider-border;
+      right: $common-border;
     };
     background-color: transparent;
     height: 100%;
     width: 80px;
 
     &:hover {
-      background-color: $header-button-color;
+      background-color: $primary-brand-color;
       cursor: pointer;
     }
   }
 
   button:nth-child(1) {
-    border-left: $header-divider-border;
+    border-left: $common-border;
   }
 }
 
