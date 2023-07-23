@@ -4,20 +4,28 @@
 
 .metrics-section {
   @include centered-flex-container;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 60px;
 
   .progress-bar-container {
-    @include centered-flex-container;
-    height: 160px;
-    width: 160px;
-    gap: 60px;
+    @include centered-vertical-flex-container;
+    height: 250px;
+    width: 50%;
+
+    .all-donut-charts-container {
+      @include centered-flex-container;
+      height: 175px;
+      width: 100%;
+      gap: 60px;
+      margin-bottom: 40px;
+    }
   }
 }
 
 .donut-inner {
   @include centered-vertical-flex-container;
-  margin-right: -180px;
+  // work around for getting content centered in chart
+  margin-left: -185px;
 
   .stat-value {
     margin: 0 {
@@ -34,7 +42,24 @@
   }
 }
 
-.progress-bar-container,
 .bar-chart-container {
-  margin-left: 200px;
+  @include centered-vertical-flex-container;
+
+  canvas {
+    margin-bottom: 40px;
+  }
+}
+
+.metric-descriptor {
+  width: fit-content;
+  padding: 7px;
+  background-color: #fff;
+  border: $common-border {
+    radius: 20px;
+  }
+
+  strong,
+  span {
+    color: $secondary-font-color;
+  }
 }
