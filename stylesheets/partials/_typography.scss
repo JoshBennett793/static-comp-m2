@@ -13,6 +13,7 @@ $med-responsive-base-font: 1.2rem;
 $lg-responsive-base-font: 1.6rem;
 
 * {
+  color: $primary-font-color;
   font: {
     family: $base-font;
     size: $sm-responsive-base-font;
