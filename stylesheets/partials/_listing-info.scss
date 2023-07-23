@@ -1,0 +1,35 @@
+@import 'base';
+
+.listing-info-container {
+  @include centered-flex-container;
+  justify-content: space-between;
+  margin: 30px 60px;
+  width: 100%;
+
+  .listing-position-header {
+    color: $secondary-font-color;
+    font: {
+      size: $lg-responsive-base-font;
+      weight: 300;
+    }
+  }
+}
+
+.listing-location-container {
+  @include centered-flex-container;
+  justify-content: flex-start;
+  
+  .listing-location {
+    color: $primary-font-color;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+.listing-info-link {
+  color: $primary-brand-color;
+}

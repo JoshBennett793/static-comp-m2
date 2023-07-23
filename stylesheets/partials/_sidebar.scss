@@ -5,7 +5,7 @@
   justify-content: start;
 
   color: $primary-font-color;
-  background-color: $sidebar-bg-color;
+  background-color: $secondary-brand-color;
   height: 100%;
   width: $sidebar-width;
   padding: $sidebar-padding;
@@ -72,8 +72,6 @@ nav {
       padding-top: 18px;
 
       a {
-        text-decoration: none;
-        color: $primary-font-color;
         padding-left: 10px;
       }
     }
