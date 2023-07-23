@@ -9,10 +9,14 @@
     <!-- SIDEBAR -->
     <section class="sidebar">
       <div class="user-profile-container">
-        <img src="/assets/images/sm-headshot.jpg" alt="user's profile picture" class="profile-pic"></img>
+        <img
+          src="/assets/images/sm-headshot.jpg"
+          alt="user's profile picture"
+          class="profile-pic"
+        />
         <p class="username">Newton Barley</p>
       </div>
-      <hr>
+      <hr />
       <!-- NAVS -->
       <div class="nav-container">
         <nav class="main-nav" aria-labelledby="main-navigation">
@@ -64,7 +68,7 @@
             </li>
           </ul>
         </nav>
-        <hr>
+        <hr />
         <nav class="admin-nav" aria-labelledby="admin-navigation">
           <h5 id="admin-navigation" class="admin-nav">Admin</h5>
           <ul>
@@ -117,22 +121,35 @@
           </ul>
         </nav>
       </div>
-      <hr>
+      <hr />
       <!-- SIDEBAR CHECKBOXES -->
       <div class="checkbox-container">
         <nav class="category-filter-nav">
           <h5>Categories</h5>
           <ul>
             <li>
-              <input type="checkbox" name="admin-checkbox" id="admin-checkbox" checked/>
+              <input
+                type="checkbox"
+                name="admin-checkbox"
+                id="admin-checkbox"
+                checked
+              />
               <label for="admin-checkbox">Administration</label>
             </li>
             <li>
-              <input type="checkbox" name="design-checkbox" id="design-checkbox" />
+              <input
+                type="checkbox"
+                name="design-checkbox"
+                id="design-checkbox"
+              />
               <label for="design-checkbox">Design</label>
             </li>
             <li>
-              <input type="checkbox" name="executive-checkbox" id="exec-checkbox" />
+              <input
+                type="checkbox"
+                name="executive-checkbox"
+                id="exec-checkbox"
+              />
               <label for="exec-checkbox">Executive</label>
             </li>
             <li>
@@ -146,24 +163,66 @@
     <!-- HEADER -->
     <main>
       <header>
-        <div class="hamburger-menu">
-          <img src="/assets/images/menu.svg" alt="hamburger menu">
+        <div class="hamburger-menu" aria-labelledby="hamburger menu">
+          <img src="/assets/images/menu.svg" alt="hamburger menu" />
         </div>
-        <input type="search" name="search-bar" id="search-bar" placeholder="Search for a job, task or resume">
+        <input
+          type="search"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search for a job, task or resume"
+        />
         <div class="header-nav-container">
           <nav class="header-nav">
-            <button class="header-nav-button add-person-button" aria-labelledby="add a user">
-              <img src="/assets/images/user-plus.svg" alt="add a user">
+            <button
+              class="header-nav-button add-person-button"
+              aria-labelledby="add a user"
+            >
+              <img src="/assets/images/user-plus.svg" alt="add a user icon" />
             </button>
-            <button class="header-nav-button add-task-button" aria-labelledby="add a task">
-              <img src="/assets/images/dark-calendar.svg" alt="add a task">
+            <button
+              class="header-nav-button add-task-button"
+              aria-labelledby="add a task"
+            >
+              <img
+                src="/assets/images/dark-calendar.svg"
+                alt="add a task icon"
+              />
             </button>
-            <button class="header-nav-button settings-button" aria-labelledby="settings">
-              <img src="/assets/images/settings.svg" alt="settings gear">
+            <button
+              class="header-nav-button settings-button"
+              aria-labelledby="settings"
+            >
+              <img src="/assets/images/settings.svg" alt="settings gear icon" />
             </button>
           </nav>
         </div>
       </header>
+      <!-- LISTING INFO -->
+      <section class="listing-info-container">
+        <div>
+          <h2 class="listing-position-header">Front End Software Engineer</h2>
+          <div class="listing-location-container">
+            <img src="/assets/images/dark-location.svg" alt="location icon" />
+            <p class="listing-location">
+              Minneapolis, MN •
+              <a href="#" class="listing-info-link">Preview this post</a>
+            </p>
+          </div>
+        </div>
+        <div class="listing-button-container">
+          <span>Open</span>
+          <button class="listing-info-button">
+            <img src="/assets/images/bookmark.svg" alt="bookmark icon" />
+          </button>
+          <button class="listing-info-button">
+            <img src="/assets/images/edit.svg" alt="edit icon" />
+          </button>
+          <button class="listing-info-button">
+            <img src="/assets/images/trash.svg" alt="trash can icon" />
+          </button>
+        </div>
+      </section>
     </main>
     <script src="bundle.js"></script>
   </body>
