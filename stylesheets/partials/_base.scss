@@ -25,3 +25,32 @@ main {
 a {
   text-decoration: none;
 }
+
+nav {
+  margin-bottom: 45px;
+
+  h5 {
+    color: $sidebar-header-color;
+    padding-top: 15px;
+
+    margin-block: {
+      start: 0;
+      end: 0;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      @include centered-flex-container;
+      justify-content: start;
+      list-style: none;
+      padding-top: 18px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
