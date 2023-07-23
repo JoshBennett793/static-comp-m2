@@ -8,21 +8,33 @@ export function ProgressBar(data, type, color) {
       datasets: [
         {
           data: [data, 4000],
-          backgroundColor: [`${color}`, '#c9c9c9'],
-          color: 'rgb(255,0,152)',
-          cutout: '80%',
+          backgroundColor: [`${color}`, '#dbe4eb'],
+          cutout: '85%',
           hoverOffset: 4,
         },
       ],
     },
-    options: {
-      plugins: {
-        legend: {
-          labels: {
-            color: '#e9c4e0',
-          },
+  });
+}
+
+export function BarChart(data) {
+  const dates = data.map(row => row.date.split('')[0]);
+  new Chart(document.getElementById('past-week-bar-chart'), {
+    type: 'bar',
+    data: {
+      labels: dates,
+      datasets: [
+        {
+          label: 'Applicants',
+          data: data.map(row => row.applicants),
+          backgroundColor: ['#49b8bf'],
         },
-      },
+        {
+          label: 'Interviews',
+          data: data.map(row => row.interviews),
+          backgroundColor: ['#c9c9c9'],
+        },
+      ],
     },
   });
 }
