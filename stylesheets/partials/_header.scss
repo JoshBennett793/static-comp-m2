@@ -1,0 +1,61 @@
+@import 'base';
+
+header {
+  @include centered-flex-container;
+  justify-content: space-between;
+  height: 85px;
+  border-bottom: $header-divider-border;
+}
+
+.hamburger-menu {
+  @include centered-flex-container;
+  height: inherit;
+  width: 120px;
+  border-right: $header-divider-border;
+  
+  img {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+.header-nav-container {
+  @include centered-flex-container;
+  height: 100%;
+  margin-top: 45px;
+}
+
+.header-nav {
+  @include centered-flex-container;
+  height: 100%;
+  width: 240px;
+
+  button {
+    border: none {
+      right: $header-divider-border;
+    };
+    background-color: transparent;
+    height: 100%;
+    width: 80px;
+
+    &:hover {
+      background-color: $header-button-color;
+      cursor: pointer;
+    }
+  }
+
+  button:nth-child(1) {
+    border-left: $header-divider-border;
+  }
+}
+
+#search-bar {
+  border: none;
+  height: 80%;
+  width: 100%;
+  margin: 20px;
+  padding-left: 14px;
+  font-size: 20px;
+}
+
+

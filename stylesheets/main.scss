@@ -1,5 +1,5 @@
 // Break down component organization into categories:
-  // typography, buttons, textboxes, selectboxes, etc...
+// typography, buttons, textboxes, selectboxes, etc...
 // stylesheets/
 // |
 // |-- modules/              # Common modules
@@ -25,7 +25,8 @@
 // `-- main.scss            # primary Sass file.
 
 // Modules and Variables
-@import "partials/base";
+@import 'partials/base';
 
 // Partials
-@import "partials/sidebar";
+@import 'partials/sidebar';
+@import 'partials/header';
