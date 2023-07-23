@@ -269,24 +269,28 @@
       <section class="lower-main">
         <div class="metrics-section">
           <div class="progress-bar-container">
-            <div class="donut-inner">
-              <p class="applicants-value stat-value">3,154</p>
-              <p class="applicants-prog-bar-title stat-title">APPLICANTS</p>
+            <div class="all-donut-charts-container">
+              <canvas id="applicants-progress-bar"></canvas>
+              <div class="donut-inner">
+                <p class="applicants-value stat-value">3,154</p>
+                <p class="applicants-prog-bar-title stat-title">APPLICANTS</p>
+              </div>
+              <canvas id="interviews-progress-bar"></canvas>
+              <div class="donut-inner">
+                <p class="interviews-value stat-value">1,546</p>
+                <p class="interviews-prog-bar-title stat-title">INTERVIEWS</p>
+              </div>
+              <canvas id="forwards-progress-bar"></canvas>
+              <div class="donut-inner">
+                <p class="forwards-value stat-value">912</p>
+                <p class="forwards-prog-bar-title stat-title">FORWARDS</p>
+              </div>
             </div>
-            <canvas id="applicants-progress-bar"></canvas>
-            <div class="donut-inner">
-              <p class="interviews-value stat-value">1,546</p>
-              <p class="interviews-prog-bar-title stat-title">INTERVIEWS</p>
-            </div>
-            <canvas id="interviews-progress-bar"></canvas>
-            <div class="donut-inner">
-              <p class="forwards-value stat-value">912</p>
-              <p class="forwards-prog-bar-title stat-title">FORWARDS</p>
-            </div>
-            <canvas id="forwards-progress-bar"></canvas>
+            <div class="metric-descriptor"><span>TOTALS • Out of <strong>5,231</strong>views</span></div>
           </div>
           <div class="bar-chart-container">
             <canvas id="past-week-bar-chart"></canvas>
+            <div class="metric-descriptor"><span>APPLICANTS/DAY</span></div>
           </div>
         </div>
       </section>
