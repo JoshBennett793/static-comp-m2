@@ -4,8 +4,8 @@
 
 .metrics-section {
   @include centered-flex-container;
-  height: 300px;
-  border: 2px solid red;
+  justify-content: space-evenly;
+  padding-top: 60px;
 
   .progress-bar-container {
     @include centered-flex-container;
@@ -22,7 +22,7 @@
   .stat-value {
     margin: 0 {
       top: 15px;
-    };
+    }
     font: {
       size: $lg-responsive-base-font;
       weight: 600;
@@ -32,4 +32,9 @@
   p {
     color: $secondary-font-color;
   }
+}
+
+.progress-bar-container,
+.bar-chart-container {
+  margin-left: 200px;
 }
