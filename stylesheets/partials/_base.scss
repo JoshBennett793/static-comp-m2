@@ -62,4 +62,20 @@ nav {
   background-color: $tertiary-brand-color;
   height: 100%;
   padding: 45px;
+
+  .main-body {
+    @include centered-flex-container;
+    width: 100%;
+    margin-top: 60px;
+    gap: 80px;
+
+    .main-body-left {
+      flex: 2;
+    }
+
+    .main-body-right {
+      height: 100%;
+      flex: 1;
+    }
+  }
 }
