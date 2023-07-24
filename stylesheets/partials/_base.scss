@@ -75,6 +75,7 @@ nav {
     }
 
     .main-body-right {
+      @include centered-vertical-flex-container;
       height: 100%;
       flex: 1;
     }
