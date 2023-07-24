@@ -5,10 +5,11 @@
 
   button {
     @include rounded-corners;
+    border: none;
     color: #fff;
     height: 50px;
     width: 100%;
-    border: none;
+    cursor: pointer;
   }
 }
 
@@ -38,9 +39,10 @@ button.linkedin {
 
 .copy-to-clipboard-container {
   @include centered-vertical-flex-container;
-  justify-content: space-evenly;
-  height: auto;
+  justify-content: space-between;
   flex: 1;
+  height: auto;
+  margin-top: 40px;
 
   hr {
     width: 100%;
@@ -51,5 +53,57 @@ button.linkedin {
 }
 
 .copy-to-clipboard-article {
+  @include centered-vertical-flex-container;
+  align-items: flex-start;
+  gap: 15px;
 
+  .clipboard-article-header {
+    @include centered-flex-container;
+
+    img {
+      margin-right: 10px;
+    }
+
+    h2 {
+      color: $secondary-font-color;
+      font-size: $med-responsive-base-font;
+    }
+  }
+
+  p {
+    color: $secondary-font-color;
+  }
+
+  input {
+    height: 45px;
+    width: 100%;
+    border: none;
+  }
+}
+
+.input-copy-container {
+  @include centered-flex-container;
+  width: 100%;
+
+  input {
+    @include rounded-corners;
+    padding-left: 15px;
+    height: 45px;
+    width: 100%;
+    border: none;
+  }
+
+  button {
+    @include rounded-corners;
+    border: {
+      top-left-radius: 0;
+      bottom-left-radius: 0;
+    }
+    border: none;
+    height: 100%;
+    width: 60px;
+    color: #fff;
+    background-color: $link-button-color;
+    cursor: pointer;
+  }
 }
