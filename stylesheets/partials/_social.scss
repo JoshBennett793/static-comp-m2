@@ -1,0 +1,36 @@
+.social-button-container {
+  @include centered-vertical-flex-container;
+  gap: 20px;
+
+  button {
+    @include rounded-corners;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    border: none;
+  }
+}
+
+@each $social in 'facebook' 'twitter' 'linkedin' {
+  button.#{$social} {
+    position: relative;
+    
+    img {
+      position: absolute;
+      left: 15px;
+      top: 13px;
+    }
+  }
+}
+
+button.facebook {
+  background-color: $facebook-color;
+}
+
+button.twitter {
+  background-color: $twitter-color;
+}
+
+button.linkedin {
+  background-color: $linkedin-color;
+}

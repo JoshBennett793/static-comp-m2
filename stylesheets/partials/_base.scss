@@ -8,6 +8,7 @@
 $sidebar-padding: 15px;
 $sidebar-width: 180px;
 
+// Borders
 $common-border: 2px solid #dcdcdc;
 $thin-common-border: 1px solid #dcdcdc;
 
@@ -67,7 +68,7 @@ nav {
     @include centered-flex-container;
     width: 100%;
     margin-top: 60px;
-    gap: 80px;
+    gap: 120px;
 
     .main-body-left {
       flex: 2;

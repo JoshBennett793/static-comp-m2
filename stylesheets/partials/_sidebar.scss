@@ -1,5 +1,3 @@
-@import 'base';
-
 .sidebar {
   @include centered-vertical-flex-container;
   justify-content: start;
