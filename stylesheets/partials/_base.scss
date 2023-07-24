@@ -8,7 +8,8 @@
 $sidebar-padding: 15px;
 $sidebar-width: 180px;
 
-$common-border: 2px solid rgb(220, 220, 220);
+$common-border: 2px solid #dcdcdc;
+$thin-common-border: 1px solid #dcdcdc;
 
 * {
   box-sizing: border-box;
@@ -56,6 +57,25 @@ nav {
 }
 
 .lower-main {
+  @include centered-vertical-flex-container;
+  justify-content: flex-start;
   background-color: $tertiary-brand-color;
   height: 100%;
+  padding: 45px;
+
+  .main-body {
+    @include centered-flex-container;
+    width: 100%;
+    margin-top: 60px;
+    gap: 80px;
+
+    .main-body-left {
+      flex: 2;
+    }
+
+    .main-body-right {
+      height: 100%;
+      flex: 1;
+    }
+  }
 }

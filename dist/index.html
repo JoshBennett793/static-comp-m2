@@ -176,13 +176,13 @@
           <nav class="header-nav">
             <button
               class="header-nav-button add-person-button"
-              aria-labelledby="add a user"
+              aria-label="add a user"
             >
               <img src="/assets/images/user-plus.svg" alt="add a user icon" />
             </button>
             <button
               class="header-nav-button add-task-button"
-              aria-labelledby="add a task"
+              aria-label="add a task"
             >
               <img
                 src="/assets/images/dark-calendar.svg"
@@ -191,7 +191,7 @@
             </button>
             <button
               class="header-nav-button settings-button"
-              aria-labelledby="settings"
+              aria-label="settings"
             >
               <img src="/assets/images/settings.svg" alt="settings gear icon" />
             </button>
@@ -266,7 +266,9 @@
           </li>
         </ul>
       </nav>
+      <!-- LOWER MAIN -->
       <section class="lower-main">
+        <!-- METRICS/CHARTS -->
         <div class="metrics-section">
           <div class="progress-bar-container">
             <div class="all-donut-charts-container">
@@ -286,12 +288,86 @@
                 <p class="forwards-prog-bar-title stat-title">FORWARDS</p>
               </div>
             </div>
-            <div class="metric-descriptor"><span>TOTALS • Out of <strong>5,231</strong>views</span></div>
+            <div class="metric-descriptor">
+              <span>TOTALS • Out of <strong>5,231</strong>views</span>
+            </div>
           </div>
           <div class="bar-chart-container">
             <canvas id="past-week-bar-chart"></canvas>
             <div class="metric-descriptor"><span>APPLICANTS/DAY</span></div>
           </div>
+        </div>
+        <!-- CHARTS/JOB-DESCRIPTION DIVIDER -->
+        <div class="divider">
+          <div class="divider-line"></div>
+          <button class="collapse">
+            <img src="/assets/images/chevron-up.svg" alt="chevron up" />
+          </button>
+          <div class="divider-line"></div>
+        </div>
+        <!-- JOB DESCRIPTION -->
+        <div class="main-body">
+          <div class="main-body-left">
+            <section class="job-description">
+              <div class="description-header">
+                <h2>JOB DESCRIPTION</h2>
+                <button class="edit-description">
+                  <img src="/assets/images/edit.svg" alt="edit icon" />
+                  <span>EDIT</span>
+                </button>
+              </div>
+              <div class="description-body">
+                <article class="position listing-article">
+                  <h3>POSITION TITLE</h3>
+                  <p>Front End Software Engineer</p>
+                </article>
+                <hr />
+                <article class="location listing-article">
+                  <h3>LOCATION</h3>
+                  <p>Minneapolis, MN</p>
+                </article>
+                <hr />
+                <article class="job-type listing-article">
+                  <h3>EMPLOYMENT TYPE</h3>
+                  <p>Full-time</p>
+                </article>
+                <hr />
+                <article class="experience listing-article">
+                  <h3>EXPERIENCE</h3>
+                  <p>Mid-level</p>
+                </article>
+                <hr />
+                <article class="status listing-article">
+                  <h3>STATUS</h3>
+                  <p>Open</p>
+                </article>
+                <hr />
+                <article class="description listing-article">
+                  <h3>DESCRIPTION</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    sequi molestiae nam, unde quod fugit. Illum nam quisquam
+                    atque illo? Et eius suscipit quas adipisci reprehenderit
+                    modi quidem? Fugit, qui. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Iure magni rem sequi
+                    voluptatum tempore repellendus hic incidunt.
+                  </p>
+                </article>
+                <hr />
+                <article class="hiring-lead listing-article">
+                  <h3>HIRING LEAD</h3>
+                  <img src="/assets/images/tom-tizzy-pfp.jpg" alt="tom tizzy profile picture">
+                  <p>Tom Tizzy</p>
+                </article>
+                <hr />
+                <article class="salary listing-article">
+                  <h3>APPROVED SALARY</h3>
+                  <p>$120,000</p>
+                </article>
+              </div>
+            </section>
+          </div>
+          <section class="main-body-right"></section>
         </div>
       </section>
     </main>
